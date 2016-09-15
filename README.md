@@ -3,6 +3,9 @@ Home automation service which can control some devices.
 
  * NAD Receiver
  * BenQ projector (W5000)
+ * Art-Net (DMX)
+ * NinjaBlocks
+ * VLC media player
  * more...
  
 This software is no longer under development. Please see [OpenHAB](http://www.openhab.com/)for a more complete home automation system,
