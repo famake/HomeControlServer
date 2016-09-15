@@ -1,4 +1,4 @@
-# HomeControllerApp
+# HomeControlServer
 Home automation service which can control some devices.
 
  * NAD Receiver
