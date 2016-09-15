@@ -1,0 +1,23 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" 
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core">
+
+
+<h:head>
+<title>DMX</title>
+</h:head>
+<h:body>
+	<h:messages/>
+	<h:form>
+	<h1>DMX</h1>
+	<p>
+	<h:commandButton value="Laser på" action="#{dmxBeane.laserPaa}"/>
+	<h:commandButton value="Blackout" action="#{dmxBeane.blackout}"/>
+	</p>
+	</h:form>
+</h:body>
+</html>

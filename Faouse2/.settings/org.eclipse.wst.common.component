@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?><project-modules id="moduleCoreId" project-version="1.5.0">
+    <wb-module deploy-name="Faouse2-1.3.3.7-SNAPSHOT">
+        <wb-resource deploy-path="/" source-path="/target/m2e-wtp/ear-resources"/>
+        <wb-resource deploy-path="/" source-path="/EarContent" tag="defaultRootSource"/>
+        <dependent-module archiveName="MrBean2Client-1.3.3.7-SNAPSHOT.jar" deploy-path="/lib" handle="module:/resource/MrBean2Client/MrBean2Client">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="MrBean2-1.3.3.7-SNAPSHOT.jar" deploy-path="/" handle="module:/resource/MrBean2/MrBean2">
+            <dependent-object/>
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="MikaelWeb-1.3.3.7-SNAPSHOT.jar" deploy-path="/" handle="module:/resource/MikaelWeb/MikaelWeb">
+            <dependent-object/>
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="LocalControllerClient.jar" deploy-path="/lib" handle="module:/resource/LocalControllerClient/LocalControllerClient">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+    </wb-module>
+</project-modules>

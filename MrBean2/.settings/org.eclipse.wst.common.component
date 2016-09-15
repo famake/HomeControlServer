@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?><project-modules id="moduleCoreId" project-version="1.5.0">
+    <wb-module deploy-name="MrBean2">
+        <wb-resource deploy-path="/" source-path="/ejbModule" tag="defaultRootSource"/>
+        <wb-resource deploy-path="/" source-path="/src/test/java"/>
+        <dependent-module archiveName="lemma-core-1.0.5-standalone.jar" deploy-path="/" handle="module:/classpath/lib/MrBean2/lemma-core-1.0.5-standalone.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="cling-core-1.0.5.jar" deploy-path="/" handle="module:/classpath/lib/MrBean2/cling-core-1.0.5.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <property name="java-output-path" value="/MrBean2/build/classes"/>
+        <property name="ClientProject" value="MrBean2Client"/>
+        <property name="ClientJARURI" value="MrBean2Client.jar"/>
+    </wb-module>
+</project-modules>
