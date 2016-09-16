@@ -31,7 +31,7 @@ public class NinjaAPI implements NinjaAPILocal, NinjaAPIRemote {
 
 	@EJB hus.BatmanLocal main;
 	
-	private static final String ACCESS_TOKEN = "b6KyhuB1vBM6h4Mjkqnp94dZvIecZvC43muBYQ";
+	private static final String ACCESS_TOKEN = "";
 	private static final String RF_GUID = "1313BB000705_0_0_11";
 	private static final String TEMP_SENSOR_GUID = "1313BB000705_0101_0_31";
 
@@ -43,7 +43,7 @@ public class NinjaAPI implements NinjaAPILocal, NinjaAPIRemote {
 
 	private static final String bryterSluttKode = "000101010101010101010111";
 	
-	private static final String [] bryterPÂKode = {
+	private static final String [] bryterP√•Kode = {
 				"000101010001010101010111",
 				"000101010100010101010111",
 				"000101010101000101010111"
@@ -53,7 +53,7 @@ public class NinjaAPI implements NinjaAPILocal, NinjaAPIRemote {
 				"000101010100010101010100",
 				"000101010101000101010100"
 		};
-	public boolean switchState[] = new boolean [bryterPÂKode.length];
+	public boolean switchState[] = new boolean [bryterP√•Kode.length];
 	
 	private final static String PIR_SENSOR = "010101010101010101010101";
 	
@@ -154,21 +154,21 @@ public class NinjaAPI implements NinjaAPILocal, NinjaAPIRemote {
         	throw new RuntimeException("Mottok ugyldig svar fra NinjaBlocks ved oppsett av callback -- code is " + code);
     }
     
-    public void settBryter(int bryterId, boolean pÂ) throws IOException
+    public void settBryter(int bryterId, boolean p√•) throws IOException
     {
 
     	
-    	if (bryterId < bryterPÂKode.length)
+    	if (bryterId < bryterP√•Kode.length)
     	{
     		String kode;
-    		if (pÂ)
+    		if (p√•)
     		{
-    			kode = bryterPÂKode[bryterId];
+    			kode = bryterP√•Kode[bryterId];
     		}
     		else {
     			kode = bryterAvKode[bryterId];
     		} 
-    		switchState[bryterId] = pÂ;
+    		switchState[bryterId] = p√•;
     		sendKode(kode);
     	}
     }
@@ -226,9 +226,9 @@ public class NinjaAPI implements NinjaAPILocal, NinjaAPIRemote {
 			
 			boolean bryterKode = false;
 			
-			for (int i=0; i<bryterPÂKode.length; i++)
+			for (int i=0; i<bryterP√•Kode.length; i++)
 			{
-				bryterKode = bryterKode || bryterPÂKode[i].equals(id) || bryterAvKode[i].equals(id);  
+				bryterKode = bryterKode || bryterP√•Kode[i].equals(id) || bryterAvKode[i].equals(id);  
 			}
 			bryterKode = bryterKode || bryterSluttKode.equals(id);
 			
